@@ -1,0 +1,282 @@
+.trading-dashboard {
+  min-height: 100vh;
+  background: #0b1120;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+
+.top-navbar {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+  background: #111827;
+  border-bottom: 1px solid #1f2937;
+}
+
+.brand {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.brand span {
+  color: #22c55e;
+}
+
+.market-search {
+  width: 300px;
+  padding: 11px 15px;
+  border: 1px solid #374151;
+  border-radius: 8px;
+  color: #9ca3af;
+  background: #0f172a;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.account {
+  padding: 9px 14px;
+  border-radius: 7px;
+  background: #172033;
+  color: #22c55e;
+  font-size: 14px;
+}
+
+/* Main Layout */
+
+.trading-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr 300px;
+  min-height: 650px;
+}
+
+/* Watchlist */
+
+.watchlist {
+  background: #0f172a;
+  border-right: 1px solid #1f2937;
+  padding: 20px;
+}
+
+.watchlist h2,
+.trade-panel h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.pair {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 15px 10px;
+  border-bottom: 1px solid #1f2937;
+  cursor: pointer;
+}
+
+.pair.active {
+  background: #172033;
+  border-radius: 7px;
+}
+
+.pair strong {
+  display: block;
+  font-size: 14px;
+}
+
+.pair small {
+  display: block;
+  color: #6b7280;
+  font-size: 10px;
+  margin-top: 5px;
+}
+
+.price {
+  text-align: right;
+  font-size: 12px;
+}
+
+.price span {
+  display: block;
+  color: #22c55e;
+  margin-top: 5px;
+}
+
+/* Chart */
+
+.chart-section {
+  padding: 25px;
+}
+
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chart-header h1 {
+  margin: 0;
+  font-size: 25px;
+}
+
+.chart-header p {
+  color: #6b7280;
+  margin-top: 6px;
+}
+
+.current-price {
+  text-align: right;
+}
+
+.current-price strong {
+  display: block;
+  font-size: 24px;
+}
+
+.current-price span {
+  color: #22c55e;
+}
+
+.chart-container {
+  height: 480px;
+  margin-top: 20px;
+  border: 1px solid #1f2937;
+  border-radius: 10px;
+  background: #0f172a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chart-placeholder {
+  text-align: center;
+  color: #374151;
+}
+
+.chart-placeholder span {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.chart-placeholder p {
+  color: #6b7280;
+}
+
+.timeframes {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.timeframes button {
+  padding: 7px 12px;
+  border: 1px solid #374151;
+  border-radius: 5px;
+  background: #111827;
+  color: #9ca3af;
+  cursor: pointer;
+}
+
+/* Trade Panel */
+
+.trade-panel {
+  background: #0f172a;
+  border-left: 1px solid #1f2937;
+  padding: 25px;
+}
+
+.buy-sell {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.buy-sell button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 7px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.buy-sell small {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.sell-button {
+  background: #dc2626;
+}
+
+.buy-button {
+  background: #16a34a;
+}
+
+.trade-input {
+  margin-bottom: 18px;
+}
+
+.trade-input label {
+  display: block;
+  color: #9ca3af;
+  font-size: 13px;
+  margin-bottom: 7px;
+}
+
+.trade-input input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  background: #111827;
+  border: 1px solid #374151;
+  border-radius: 7px;
+  color: #ffffff;
+  outline: none;
+}
+
+.place-order {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 7px;
+  background: #22c55e;
+  color: #052e16;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Account Summary */
+
+.account-summary {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  background: #111827;
+  border-top: 1px solid #1f2937;
+}
+
+.account-summary div {
+  padding: 18px 25px;
+  border-right: 1px solid #1f2937;
+}
+
+.account-summary small {
+  display: block;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.account-summary strong {
+  font-size: 17px;
+}
+
+.profit {
+  color: #22c55e;
+}
